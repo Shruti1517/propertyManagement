@@ -30,7 +30,7 @@ class RequestApi extends CI_Controller {
      echo 'ERROR : ',  'Something went wrong !!!!'.$e->getMessage(), "\n";
    } 	
  }
- /* --Update status according to the user input-- */
+ /* --Update status according to the user input-- start*/
  public function accept_decline_request_status(){
   try{
    $info =(array) json_decode(file_get_contents("php://input"),TRUE);
